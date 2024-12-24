@@ -1,15 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -159,8 +147,6 @@ body { background: var(--smoky-black); }
 
 
 
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -293,9 +279,6 @@ article.active {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -305,9 +288,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -447,9 +427,6 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
-
-
-
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -487,10 +464,6 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -505,7 +478,6 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
-
 
 
 /**
@@ -1002,7 +974,8 @@ main {
 
 .project-img img {
   width: 100%;
-  height: 100%;
+  height: 205px;
+  /* height: 100%; */
   object-fit: cover;
   transition: var(--transition-1);
 }
@@ -1115,9 +1088,6 @@ main {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
@@ -1223,8 +1193,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1251,10 +1219,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: auto; }
 
 }
-
-
-
-
 
 /**
  * responsive larger than 580px screen
@@ -1540,9 +1504,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn ion-icon { font-size: 18px; }
 
 }
-
-
-
 
 
 /**
@@ -1879,4 +1840,62 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+.resumeDownload{
+  width: 105px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 20px;
+  background: var(--text-gradient-yellow);
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.oneSkill{
+  min-width: 40px;
+  width: fit-content;
+  padding: 10px;
+  background: var(--text-gradient-yellow);
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.flex{
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.loading {
+  display: none;
+  border: 4px solid #6e6c6c;
+  border-top: 4px solid var(--orange-yellow-crayola);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
